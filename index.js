@@ -85,10 +85,16 @@ function allFunction(){
 const completedAll=document.querySelector('.clear');
 completedAll.addEventListener('click',completedAllFunction);
 function completedAllFunction(){
-
-    //This I accidently wrote for clearAll
-    // itemsList.innerHTML=``;
-    // items.splice(0,items.length);
-    // document.querySelector('.number').innerHTML=items.length;
-    // localStorage.clear();
+    for(let i=0;i<items.length;i++){
+         if(items[i].done===true){
+            items.splice(i,1);
+            i--;
+         }
+    }
+    localStorage.setItem('items',JSON.stringify(items));
+    document.querySelector('.number').innerHTML=items.length;
+    populateList(itemsList,items);
+    //Have to initialise again as the list of crosses have changed after we clear the completed ones
+    const crosses=document.querySelectorAll('.cross');
+    crosses.forEach(cross=> cross.addEventListener("click",funcCross));
 }
