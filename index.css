@@ -149,3 +149,53 @@ input[type="checkbox"]:checked{
     text-align: center;
     color: var(--grayish-blue);
 }
+
+@media only screen and (max-width:1350px){
+    body{
+       background: url('Images/bg-mobile-light.jpg');
+       background-size: 100vw 40vh;
+       background-repeat: no-repeat;
+       font-family: 'Josefin Sans', sans-serif;
+       font-size: max(1.1rem,2.2vw);
+    }
+    body.dark{
+       background: url('Images/bg-mobile-dark.jpg');
+       background-size: 100vw 40vh;
+       background-repeat: no-repeat;
+       font-family: 'Josefin Sans', sans-serif;
+       font-size: max(1.1rem,2.2vw);
+    }
+    .up{
+        width:85vw;
+    }
+    .add-items input{
+        width:85vw;
+       font-size: max(1.1rem,2.2vw);
+    }
+    .items li{
+        width:85vw;
+    }
+    .Action{
+        width:85vw;
+        font-size: max(0.8rem,2vw);
+        display: grid;
+        grid-template-areas: '.itemsLeft .Action2'
+                             '.Action1 .Action2';
+        justify-content:center;
+    }
+    .itemsLeft{
+        grid-area:itemsLeft;
+    }
+    .Action1{
+        margin-top: 1.5rem;
+        display: flex;
+        gap:10%;
+        grid-area:Action1;
+        justify-content: center;
+    }
+    .Action2{
+       grid-area:Action2;
+    }
+
+    
+}
