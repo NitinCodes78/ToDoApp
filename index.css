@@ -153,14 +153,14 @@ input[type="checkbox"]:checked{
 @media only screen and (max-width:1350px){
     body{
        background: url('Images/bg-mobile-light.jpg');
-       background-size: 100vw 40vh;
+       background-size: 100vw 35vh;
        background-repeat: no-repeat;
        font-family: 'Josefin Sans', sans-serif;
        font-size: max(1.1rem,2.2vw);
     }
     body.dark{
        background: url('Images/bg-mobile-dark.jpg');
-       background-size: 100vw 40vh;
+       background-size: 100vw 35vh;
        background-repeat: no-repeat;
        font-family: 'Josefin Sans', sans-serif;
        font-size: max(1.1rem,2.2vw);
@@ -177,7 +177,7 @@ input[type="checkbox"]:checked{
     }
     .Action{
         width:85vw;
-        font-size: max(0.8rem,2vw);
+        font-size: max(0.82rem,2vw);
         display: grid;
         grid-template-areas: '.itemsLeft .Action2'
                              '.Action1 .Action2';
@@ -192,6 +192,7 @@ input[type="checkbox"]:checked{
         gap:10%;
         grid-area:Action1;
         justify-content: center;
+        margin-left: 4vw;
     }
     .Action2{
        grid-area:Action2;
