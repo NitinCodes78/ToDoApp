@@ -40,6 +40,8 @@ function toggle(e){
      items[index].done=!items[index].done;
      localStorage.setItem('items',JSON.stringify(items));
      populateList(itemsList,items);
+     const crosses=document.querySelectorAll('.cross');
+     crosses.forEach(cross=> cross.addEventListener("click",funcCross));
 }
 document.querySelector('.number').innerHTML=items.length;
 //Functionality for cross i.e. removing an element from the list 
