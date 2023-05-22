@@ -17,6 +17,8 @@ function addItem(e){
     document.querySelector('.number').innerHTML=items.length;
     populateList(itemsList,items);
     localStorage.setItem('items',JSON.stringify(items));
+    const crosses=document.querySelectorAll('.cross');
+    crosses.forEach(cross=> cross.addEventListener("click",funcCross));
     this.reset();
 }
 function populateList(itemsList,items){
