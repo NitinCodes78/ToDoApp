@@ -164,6 +164,7 @@ input[type="checkbox"]:checked{
        background-repeat: no-repeat;
        font-family: 'Josefin Sans', sans-serif;
        font-size: max(1.1rem,2.2vw);
+       background-color: black;
     }
     .up{
         width:85vw;
